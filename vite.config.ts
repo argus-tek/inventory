@@ -12,4 +12,7 @@ export default defineConfig({
       outdir: "./src/lib/paraglide",
     }),
   ],
+  ssr: {
+    noExternal: ["rune-lab"],
+  },
 });

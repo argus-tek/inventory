@@ -1,45 +1,54 @@
-# sv
+# E-Commerce Inventory (sveltekit)
 
-Everything you need to build a Svelte project, powered by
-[`sv`](https://github.com/sveltejs/cli).
+This project serves as the core administrative dashboard and inventory manager for our e-commerce platform. It integrates our custom `rune-lab` UI toolkit to manage products, users, global state, and orders seamlessly.
 
-## Creating a project
+## Tech Stack
 
-If you're seeing this, you've probably already done this step. Congrats!
+* **Core Framework:** SvelteKit paired with Svelte 5.
+* **Styling & UI:** Tailwind CSS v4 integrated with DaisyUI v5 for extensive, out-of-the-box theming.
+* **Tailwind Plugins:** Pre-configured with `@tailwindcss/typography` and `@tailwindcss/forms`.
+* **Internationalization:** `@inlang/paraglide-js` set up for English (`en`) and Spanish (`es`) out of the box.
+* **UI Toolkit:** `rune-lab` integration for command palettes, toast notifications, reactive layouts, and keyboard shortcuts.
 
-```sh
-# create a new project
-npx sv create my-app
-```
+---
 
-To recreate this project with the same configuration:
+## Getting Started
 
-```sh
-# recreate this project
-bun x sv create --template minimal --types ts --add sveltekit-adapter="adapter:static" tailwindcss="plugins:typography,forms" paraglide="languageTags:en, es+demo:no" --install bun inventory
-```
+### Installation
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or
-`pnpm install` or `yarn`), start a development server:
+Clone the repository:
 
 ```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+git clone https://github.com/argus-tek/inventory.git
 ```
 
-## Building
-
-To create a production version of your app:
+Change directory to the cloned repository:
 
 ```sh
-npm run build
+cd inventory
 ```
 
-You can preview the production build with `npm run preview`.
+Install dependencies:
 
-> To deploy your app, you may need to install an
-> [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+```sh
+bun install
+```
+
+### Developing
+
+Start the Vite development server:
+
+```sh
+bun run dev --host
+```
+
+You can access the app at [`http://localhost:5173`](http://localhost:5173).
+
+
+## Architecture & Integration Notes
+
+This application relies on the `rune-lab` package for its global state management and layout shells.
+
+* **Vite Compilation:** Ensure `rune-lab` is included in Vite's `ssr.noExternal` array so SvelteKit compiles the library components properly.
+* **Tailwind Scanning:** The global CSS file uses an `@source` directive to ensure Tailwind scans the `rune-lab` distribution folder for DaisyUI utility classes.
+* **Global Provider:** The root SvelteKit layout MUST wrap all content in the `<RuneProvider>` to initialize the theme, locale, API, and toast stores.
