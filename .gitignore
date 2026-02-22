@@ -1,0 +1,12 @@
+# all that start with a dot except .gitignore
+.*
+!.gitignore
+
+# lock files (from various package managers)
+*.lock
+
+# web-generated files
+node_modules
+build
+dist
+scripts
