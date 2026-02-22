@@ -30,7 +30,8 @@ La biblioteca base de nuestra plantilla. Provee los "Shells" de la aplicación
 (Workspace, Navegación), el sistema de notificaciones (Toasts), la paleta de
 comandos y los atajos de teclado globales.
 
-- 🐙 **Repo:** [github.com/Yrrrrrf/rune-lab](https://github.com/Yrrrrrf/rune-lab)
+- 🐙 **Repo:**
+  [github.com/Yrrrrrf/rune-lab](https://github.com/Yrrrrrf/rune-lab)
 - 📦 **NPM:** [`rune-lab`](https://www.npmjs.com/package/rune-lab)
 
 ### Tailwind CSS (v4)
@@ -62,16 +63,20 @@ Bibliotecas que añaden capacidades específicas al sistema.
 Sistema de internacionalización (i18n) totalmente tipado y compatible con
 SvelteKit. Gestiona las traducciones (`en`, `es`) y el enrutamiento localizado.
 
-- 🌐 **Web:** [inlang.com](https://inlang.com/m/gerre34r/library-inlang-paraglideJs)
-- 📚 **Docs:** [Guía para SvelteKit](https://inlang.com/m/gerre34r/library-inlang-paraglideJs/usage)
-- 📦 **NPM:** [`@inlang/paraglide-js`](https://www.npmjs.com/package/@inlang/paraglide-js)
+- 🌐 **Web:**
+  [inlang.com](https://inlang.com/m/gerre34r/library-inlang-paraglideJs)
+- 📚 **Docs:**
+  [Guía para SvelteKit](https://inlang.com/m/gerre34r/library-inlang-paraglideJs/usage)
+- 📦 **NPM:**
+  [`@inlang/paraglide-js`](https://www.npmjs.com/package/@inlang/paraglide-js)
 
 ### Hotkeys.js
 
 Utilizada internamente (a través de `rune-lab`) para la captura de combinaciones
 de teclas en el navegador.
 
-- 🐙 **Repo:** [github.com/jaywcjlove/hotkeys](https://github.com/jaywcjlove/hotkeys)
+- 🐙 **Repo:**
+  [github.com/jaywcjlove/hotkeys](https://github.com/jaywcjlove/hotkeys)
 - 📦 **NPM:** [`hotkeys-js`](https://www.npmjs.com/package/hotkeys-js)
 
 ---
