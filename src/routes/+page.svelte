@@ -1,8 +1,11 @@
 <script lang="ts">
-    import { getLayoutStore } from "rune-lab";
+    import { getLayoutStore, LanguageSelector, ThemeSelector } from "rune-lab";
 
     const layout = getLayoutStore();
 </script>
+
+<ThemeSelector />
+<LanguageSelector />
 
 <div class="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
     <header

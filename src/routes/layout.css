@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@source "../node_modules/rune-lab/dist";
+@source "../../node_modules/rune-lab/dist";
 @plugin "@tailwindcss/forms";
 @plugin "@tailwindcss/typography";
 

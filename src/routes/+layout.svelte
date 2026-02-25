@@ -2,7 +2,7 @@
 	import "./layout.css";
 	import favicon from "$lib/assets/favicon.svg";
 	import { RuneProvider, cookieDriver } from "rune-lab";
-	import { m } from "$lib/paraglide/messages.js";
+	import * as m from "$lib/paraglide/messages.js";
 	import AppLayout from "./AppLayout.svelte";
 
 	let { children } = $props();
@@ -37,10 +37,11 @@
 
 <RuneProvider
 	config={{
-		app: { name: "Inventory System", version: "1.0.0" },
-		persistence: cookieDriver(),
+		app: { name: "Rune Lab Explorer", version: "0.0.21" },
+		apiUrl: "https://api.example.com",
+		apiHealthCheck: async () => true,
 		dictionary: m,
-		favicon: favicon,
+		favicon: "/img/rune.png",
 	}}
 >
 	<AppLayout {sections}>
