@@ -1,7 +1,7 @@
 <script lang="ts">
 	import "./layout.css";
 	import favicon from "$lib/assets/favicon.svg";
-	import { RuneProvider, cookieDriver } from "rune-lab";
+	import { RuneProvider } from "rune-lab";
 	import * as m from "$lib/paraglide/messages.js";
 	import AppLayout from "./AppLayout.svelte";
 
@@ -37,7 +37,7 @@
 
 <RuneProvider
 	config={{
-		app: { name: "Rune Lab Explorer", version: "0.0.21" },
+		app: { name: "Inventory", version: "0.0.1" },
 		apiUrl: "https://api.example.com",
 		apiHealthCheck: async () => true,
 		dictionary: m,
