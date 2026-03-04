@@ -60,15 +60,6 @@
                 action: () =>
                     toasts.success("Inventory exported successfully!"),
             });
-
-            shortcuts.register({
-                id: "shortcut.new",
-                keys: "ctrl n",
-                label: "New Product",
-                category: "Product",
-                scope: "global",
-                handler: () => toasts.info("New Product shortcut triggered"),
-            });
         });
 
         return () => {

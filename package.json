@@ -29,6 +29,6 @@
   "dependencies": {
     "daisyui": "^5.5.19",
     "hotkeys-js": "^4.0.2",
-    "rune-lab": "0.2.2"
+    "rune-lab": "0.2.3"
   }
 }
