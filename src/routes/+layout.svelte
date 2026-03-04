@@ -1,13 +1,21 @@
 <script lang="ts">
 	import "./layout.css";
-	import favicon from "$lib/assets/favicon.svg";
-	import { RuneProvider } from "rune-lab";
+	import { RuneProvider, version } from "rune-lab";
 	import * as m from "$lib/paraglide/messages.js";
 	import AppLayout from "./AppLayout.svelte";
+
+	console.log("Rune Lab Version:", version());
 
 	let { children } = $props();
 
 	const sections = [
+		{
+			id: "lab",
+			title: "Lab",
+			items: [
+				{ id: "dashboard", label: "🧪 Lab Dashboard", href: "/lab" },
+			],
+		},
 		{
 			id: "inventory",
 			title: "Inventory",
@@ -37,7 +45,7 @@
 
 <RuneProvider
 	config={{
-		app: { name: "Inventory", version: "0.0.1" },
+		app: { name: "Inventory", version: version() },
 		apiUrl: "https://api.example.com",
 		apiHealthCheck: async () => true,
 		dictionary: m,
