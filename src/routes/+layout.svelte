@@ -43,6 +43,8 @@
 	];
 </script>
 
+{m.hello_world({ name: "Rune Lab" })}
+
 <RuneProvider
 	config={{
 		app: { name: "Inventory", version: version() },
